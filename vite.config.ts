@@ -17,7 +17,8 @@ export default defineConfig({
 						provider: 'playwright',
 						instances: [{ browser: 'chromium' }],
 						isolate: true,
-						headless: true // set to false to show testing UI in browser
+						headless: true, // set to false to show testing UI in browser
+						screenshotFailures: false
 					},
 					include: ['src/**/*.{test,spec}.{js,ts}'],
 					exclude: ['src/lib/server/**', 'src/**/*.server.*'],
