@@ -1,5 +1,6 @@
 <script lang="ts">
-	const test2:string="bad formatting"
+	const test3: number = 123;
+	console.log(test3);
 </script>
 
 <h1>Welcome to SvelteKit</h1>

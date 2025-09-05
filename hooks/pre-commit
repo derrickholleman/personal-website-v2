@@ -2,3 +2,6 @@
 
 # Run lint-staged on staged files
 npx lint-staged
+
+# Exit with the same code as lint-staged
+exit $?
