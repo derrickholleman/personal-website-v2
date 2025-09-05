@@ -9,19 +9,29 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "Running unit tests..."
-# Run unit tests
-npm run test:unit -- --run
-if [ $? -ne 0 ]; then
-    echo "❌ Unit tests failed. Fix failing tests before committing."
-    exit 1
+# Check if unit test files exist
+if find src -name "*.test.*" -o -name "*.spec.*" | grep -q .; then
+    # Run unit tests
+    npm run test:unit -- --run
+    if [ $? -ne 0 ]; then
+        echo "❌ Unit tests failed. Fix failing tests before committing."
+        exit 1
+    fi
+else
+    echo "ℹ️ No unit tests found, skipping unit test check."
 fi
 
 echo "Running e2e tests..."
-# Run e2e tests
-npm run e2e
-if [ $? -ne 0 ]; then
-    echo "❌ E2E tests failed. Fix failing tests before committing."
-    exit 1
+# Check if e2e test files exist
+if find e2e -name "*.test.*" -o -name "*.spec.*" 2>/dev/null | grep -q .; then
+    # Run e2e tests
+    npm run e2e
+    if [ $? -ne 0 ]; then
+        echo "❌ E2E tests failed. Fix failing tests before committing."
+        exit 1
+    fi
+else
+    echo "ℹ️ No e2e tests found, skipping e2e test check."
 fi
 
 echo "✅ All checks passed. Proceeding with commit."
