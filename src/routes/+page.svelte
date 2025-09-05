@@ -16,12 +16,19 @@
 	/>
 	<h1>Derrick Holleman.</h1>
 	<p>Frontend Software Engineer</p>
-	<a
-		href="/src/lib/assets/Derrick-Holleman-resume.pdf"
-		target="_blank"
-		class="mt-6 rounded-full border border-rose-300 px-6 py-3 text-rose-300 transition-colors duration-100 hover:border-rose-200 hover:text-rose-200"
-		>View Resume</a
-	>
+	<div class="mt-6 flex gap-4">
+		<a
+			href="/src/lib/assets/Derrick-Holleman-resume.pdf"
+			target="_blank"
+			class="rounded-full border border-rose-300 px-6 py-3 text-rose-300 transition-colors duration-100 hover:border-rose-200 hover:text-rose-200"
+			>View Resume</a
+		>
+		<a
+			href="/projects"
+			class="rounded-full border border-blue-300 px-6 py-3 text-blue-300 transition-colors duration-100 hover:border-blue-200 hover:text-blue-200"
+			>View Projects</a
+		>
+	</div>
 </main>
 
 <footer class="fixed right-0 bottom-4 left-0 text-center text-sm text-gray-300">
