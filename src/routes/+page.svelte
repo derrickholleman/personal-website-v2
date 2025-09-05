@@ -1,10 +1,24 @@
+<script>
+	const currentYear = new Date().getFullYear();
+</script>
+
 <svelte:head>
 	<title>derrickholleman.dev - Home</title>
 </svelte:head>
 
-<div
+<main
 	class="mx-auto flex min-h-screen max-w-[1440px] flex-col items-center justify-center text-center text-2xl text-white"
 >
 	<h1>Derrick Holleman.</h1>
 	<p>Frontend Software Engineer</p>
-</div>
+	<a
+		href="/src/lib/assets/Derrick-Holleman-resume.pdf"
+		target="_blank"
+		class="mt-6 rounded-full border border-rose-300 px-6 py-3 text-rose-300 transition-colors duration-100 hover:border-rose-200 hover:text-rose-200"
+		>View Resume</a
+	>
+</main>
+
+<footer class="fixed right-0 bottom-4 left-0 text-center text-sm text-gray-300">
+	© {currentYear} Derrick Holleman. All Rights Reserved.
+</footer>
