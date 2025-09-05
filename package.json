@@ -24,6 +24,9 @@
 			"prettier --write"
 		]
 	},
+	"optionalDependencies": {
+		"@rollup/rollup-linux-x64-gnu": "4.6.1"
+	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
 		"@eslint/js": "^9.18.0",
