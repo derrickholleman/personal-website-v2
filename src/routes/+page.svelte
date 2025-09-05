@@ -16,12 +16,12 @@
 		<a
 			href="/resume.pdf"
 			target="_blank"
-			class="rounded-full border border-rose-300 px-6 py-3 text-rose-300 transition-colors duration-100 hover:border-rose-200 hover:text-rose-200"
+			class="rounded-full border-2 border-rose-300 px-6 py-3 text-rose-300 transition-colors duration-100 hover:border-rose-200 hover:text-rose-200"
 			>View Resume</a
 		>
 		<a
 			href="/projects"
-			class="rounded-full border border-blue-300 px-6 py-3 text-blue-300 transition-colors duration-100 hover:border-blue-200 hover:text-blue-200"
+			class="rounded-full border-2 border-blue-300 px-6 py-3 text-blue-300 transition-colors duration-100 hover:border-blue-200 hover:text-blue-200"
 			>View Projects</a
 		>
 	</div>
