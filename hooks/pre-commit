@@ -1,7 +1,27 @@
 #!/bin/sh
 
+echo "Running lint-staged..."
 # Run lint-staged on staged files
 npx lint-staged
+if [ $? -ne 0 ]; then
+    echo "❌ Lint-staged failed. Fix linting errors before committing."
+    exit 1
+fi
 
-# Exit with the same code as lint-staged
-exit $?
+echo "Running unit tests..."
+# Run unit tests
+npm run test:unit -- --run
+if [ $? -ne 0 ]; then
+    echo "❌ Unit tests failed. Fix failing tests before committing."
+    exit 1
+fi
+
+echo "Running e2e tests..."
+# Run e2e tests
+npm run e2e
+if [ $? -ne 0 ]; then
+    echo "❌ E2E tests failed. Fix failing tests before committing."
+    exit 1
+fi
+
+echo "✅ All checks passed. Proceeding with commit."

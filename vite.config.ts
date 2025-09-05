@@ -19,18 +19,9 @@ export default defineConfig({
 						isolate: true,
 						headless: true // set to false to show testing UI in browser
 					},
-					include: ['src/**/*.svelte.{test,spec}.{js,ts}'],
+					include: ['src/**/*.{test,spec}.{js,ts}'],
 					exclude: ['src/lib/server/**', 'src/**/*.server.*'],
 					setupFiles: ['./vitest-setup-client.ts']
-				}
-			},
-			{
-				plugins: [sveltekit()],
-				test: {
-					name: 'server',
-					environment: 'node',
-					include: ['src/**/*.{test,spec}.{js,ts}'],
-					exclude: ['src/**/*.svelte.{test,spec}.{js,ts}']
 				}
 			}
 		]
