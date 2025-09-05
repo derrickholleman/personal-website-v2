@@ -1,0 +1,8 @@
+[build]
+  command = "npm install --no-optional --registry https://registry.npmjs.org/ && npm run build"
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "22.19.0"
+  NPM_CONFIG_REGISTRY = "https://registry.npmjs.org/"
+  NPM_CONFIG_ALWAYS_AUTH = "false"

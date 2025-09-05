@@ -26,7 +26,8 @@
 	},
 	"optionalDependencies": {
 		"@rollup/rollup-linux-x64-gnu": "4.6.1",
-		"lightningcss-linux-x64-gnu": "1.28.1"
+		"lightningcss-linux-x64-gnu": "1.28.1",
+		"@tailwindcss/oxide-linux-x64-gnu": "4.0.0"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
