@@ -1,5 +1,5 @@
 <script>
-	const currentYear = new Date().getFullYear();
+	import Footer from '$lib/components/Footer.svelte';
 </script>
 
 <svelte:head>
@@ -13,6 +13,4 @@
 	</div>
 </main>
 
-<footer class="fixed right-0 bottom-4 left-0 text-center text-sm text-gray-300">
-	© {currentYear} Derrick Holleman. All Rights Reserved.
-</footer>
+<Footer />
