@@ -12,7 +12,7 @@
 	<img src="/logo.png" alt="Derrick Holleman Logo" class="h-[200px] w-auto" />
 	<h1>Derrick Holleman.</h1>
 	<p>Frontend Software Engineer</p>
-	<div class="mt-6 flex gap-4">
+	<div class="mt-6 flex flex-col gap-4 sm:flex-row">
 		<a
 			href="/resume.pdf"
 			target="_blank"
