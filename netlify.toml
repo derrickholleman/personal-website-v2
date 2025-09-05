@@ -1,5 +1,5 @@
 [build]
-  command = "npm install --no-optional --registry https://registry.npmjs.org/ && npm run build"
+  command = "npm install --registry https://registry.npmjs.org/ && npm run build"
   publish = "build"
 
 [build.environment]
