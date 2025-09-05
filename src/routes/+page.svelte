@@ -1,5 +1,5 @@
 <script lang="ts">
-	const test: number = 1
+	const test:number=1;
 </script>
 
 <h1>Welcome to SvelteKit</h1>
