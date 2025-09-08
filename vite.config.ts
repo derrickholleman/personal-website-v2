@@ -12,6 +12,7 @@ export default defineConfig({
 				test: {
 					name: 'client',
 					environment: 'browser',
+					globals: true,
 					browser: {
 						enabled: true,
 						provider: 'playwright',
@@ -21,8 +22,7 @@ export default defineConfig({
 						screenshotFailures: false
 					},
 					include: ['src/**/*.{test,spec}.{js,ts}'],
-					exclude: ['src/lib/server/**', 'src/**/*.server.*'],
-					setupFiles: ['./vitest-setup-client.ts']
+					exclude: ['src/lib/server/**', 'src/**/*.server.*']
 				}
 			}
 		]

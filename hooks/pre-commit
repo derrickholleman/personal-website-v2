@@ -12,7 +12,7 @@ echo "Running unit tests..."
 # Check if unit test files exist
 if find src -name "*.test.*" -o -name "*.spec.*" | grep -q .; then
     # Run unit tests
-    npm run test:unit -- --run
+    npm run test -- --run
     if [ $? -ne 0 ]; then
         echo "❌ Unit tests failed. Fix failing tests before committing."
         exit 1
