@@ -19,11 +19,12 @@
 	<div class="mt-8 grid grid-cols-1 gap-6 px-4 sm:grid-cols-2 lg:grid-cols-3">
 		<ProjectCard
 			name="TaskPilot"
-			description="A todo app built with Angular — my first project using the framework. Create, update, and delete tasks with data persisted in local storage."
+			description="A todo app built with Angular, my first project using the framework. Create, update, and delete tasks with data persisted in local storage."
 			screenshot="/task-pilot-home-screen.png"
 			frameworkIcon="/angular-icon.svg"
 			frameworkName="Angular"
 			demoUrl="https://taskpilott.netlify.app/"
+			githubLink="https://github.com/derrickholleman/task-pilot"
 		/>
 	</div>
 </main>
