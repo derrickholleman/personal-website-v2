@@ -13,6 +13,7 @@ export default defineConfig({
 					name: 'client',
 					environment: 'browser',
 					globals: true,
+					setupFiles: ['./src/setupTests.ts'],
 					browser: {
 						enabled: true,
 						provider: 'playwright',
