@@ -16,7 +16,7 @@
 <div
 	class="group overflow-hidden rounded-lg border border-gray-700 bg-gray-900 transition-all duration-200 hover:border-gray-500"
 >
-	<img src={screenshot} alt="{name} screenshot" class="w-full object-contain" />
+	<img src={screenshot} alt="{name} screenshot" class="h-48 w-full object-cover object-top" />
 	<div class="p-4">
 		<div class="flex items-center justify-between">
 			<div class="flex items-center gap-2">

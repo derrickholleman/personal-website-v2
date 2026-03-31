@@ -18,6 +18,15 @@
 	<h1 class="mt-4 text-center text-4xl font-bold">Projects</h1>
 	<div class="mt-8 grid grid-cols-1 gap-6 px-4 sm:grid-cols-2 lg:grid-cols-3">
 		<ProjectCard
+			name="TapTrack"
+			description="A student behavior tracking app for teachers. Record behaviors with timestamps and visualize patterns with charts."
+			screenshot="/tap-track-screenshot.png"
+			frameworkIcon="/react-icon.svg"
+			frameworkName="React"
+			demoUrl="https://tap-track.netlify.app"
+			githubLink="https://github.com/derrickholleman/tap-track"
+		/>
+		<ProjectCard
 			name="TaskPilot"
 			description="A todo app built with Angular, my first project using the framework. Create, update, and delete tasks with data persisted in local storage."
 			screenshot="/task-pilot-home-screen.png"
