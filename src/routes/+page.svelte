@@ -7,11 +7,11 @@
 </svelte:head>
 
 <main
-	class="mx-auto flex min-h-screen max-w-[1440px] flex-col items-center justify-center text-center text-2xl text-white"
+	class="mx-auto flex min-h-screen max-w-360 flex-col items-center justify-center text-center text-2xl text-white"
 >
-	<img src="/logo.png" alt="Derrick Holleman Logo" class="h-[200px] w-auto" />
+	<img src="/logo.png" alt="Derrick Holleman Logo" class="h-50 w-auto" />
 	<h1>Derrick Holleman.</h1>
-	<p>Frontend Software Engineer</p>
+	<p>Software Engineer</p>
 	<div class="mt-6 flex flex-col gap-4 sm:flex-row">
 		<a
 			href="/resume.pdf"
