@@ -4,7 +4,7 @@ test.describe('Home Page', async () => {
 	test('home page has expected text', async ({ page }) => {
 		await page.goto('/');
 		await expect(page.locator('main').getByText('Derrick Holleman.')).toBeVisible();
-		await expect(page.getByText('Frontend Software Engineer')).toBeVisible();
+		await expect(page.getByText('Software Engineer')).toBeVisible();
 	});
 
 	test('footer displays expected text', async ({ page }) => {
